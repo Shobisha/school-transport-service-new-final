@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --primaryColor: #59aa47;
+  --secondaryColor: #8b8e8f;
+  --bgColorPrimary: #59aa47;
+  --bgColorSecondary: #58585a;
+  --blueColor: #3ebae8;
+  --bgColorInfo: #4fc6ed;
+  --bgColorInfosec: #428bca;
+  --bgColorInfotext: #2b2b2b;
+  --bgColorInfosubmit: #24890d;
+
+  --bgColortext: #595959;
+  --whiteColor: #fff;
+  --font-family: "Josefin Sans";
+  --font-familysan: "Josefin Sans Regular";
+}
+/* ------section1--------- */
+
+.carosalhome {
+  display: block;
+}
+.carouselcontainer {
+  position: relative;
+}
+
+.carousel-item-content {
+  position: relative;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.custom-carousel-button {
+  border: none;
+  outline: none;
+  background-color: #2b2b2b;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-carousel-button.prev {
+  left: 0;
+  transform: translate(-50%, -50%); /* Center horizontally */
+}
+
+.custom-carousel-button.next {
+  right: 0;
+  transform: translate(50%, -50%); /* Center horizontally */
+}
+.custom-carousel-button.prev .icon {
+  margin-left: 25px;
+}
+.custom-carousel-button.next .icon {
+  margin-right: 25px;
+}
+.custom-carousel-button .icon {
+  color: white;
+}
+.custom-carousel-button:hover {
+  background-color: var(--bgColorInfo);
+}
+.titile {
+  font-size: 36px;
+  line-height: 1em;
+  /* font-weight: bold; */
+  font-family: var(--font-family);
+  margin-bottom: 17px;
+}
+.txt {
+  font-size: 21px;
+  font-weight: normal;
+  margin-bottom: 24px;
+  font-family: var(--font-family);
+}
+.btn {
+  display: inline-block;
+
+  margin-bottom: 0;
+
+  font-weight: normal;
+
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+
+  user-select: none;
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 0px;
+  background-color: var(--bgColorInfo);
+  border-color: var(--bgColorInfo);
+  font-family: var(--font-family);
+}
+.btn-lg:hover {
+  background-color: var(--bgColorInfosec);
+}
+/* .progressBar {
+  height: 10px;
+  background-color: #59aa47;
+}
+
+.bar {
+  border-radius: 5px;
+} */
+
+.carouseltitle {
+  left: 90px;
+  position: absolute;
+  top: 50px;
+  /* background-color: #24890d; */
+  display: flex;
+  align-items: center;
+}
+/* ------section2--------- */
+.sectiontwo {
+  padding: 3em 0;
+  background-color: var(--whiteColor);
+}
+.sectiontittle {
+  font-size: 22px;
+  /* font-weight: 700; */
+  margin: 36px 0 12px;
+  font-family: var(--font-family);
+}
+/* ------section3--------- */
+
+/* Add your CSS styles here */
+/* Example styles for the section */
+.sectionthree {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #3ebae8;
+}
+.dark-img {
+  background-image: url("../public/Images/asfalt_dark_patten.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.backgrd {
+  background-color: #f4f4f4;
+}
+.sectionthree .heading {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  color: var(--bgColorSecondary);
+}
+
+.headingtittle {
+  font-size: 33px;
+  margin-bottom: 30px;
+  color: var(--bgColorSecondary);
+  font-weight: bold;
+  font-family: var(--font-family);
+}
+
+.hd-borde {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 0 0 1em 0;
+}
+.hd-borde:before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -70px;
+  height: 1px;
+  background: #c7c7c7;
+}
+.hd-borde:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -11px;
+  left: 50%;
+  margin-left: -12px;
+  border: 1px solid #c7c7c7;
+  border-radius: 20px;
+  background: #f9f9f9;
+}
+
+.media.box {
+  display: flex;
+  align-items: start;
+  margin: 25px 0px;
+}
+
+.pull-left {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.pull-left i {
+  font-size: 22px;
+  color: var(--blueColor);
+  margin-right: 10px;
+}
+
+.media-heading {
+  margin: 0 0 10px 0;
+  color: #58585a;
+  font-size: 20px;
+  /* font-weight: bold; */
+  line-height: 1em;
+  text-align: start;
+  font-family: var(--font-family);
+}
+
+.txttittle {
+  color: #171717;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0; /* Remove default margin for paragraphs */
+  text-align: start;
+  font-family: var(--font-family);
+}
+/* ------section4------ */
+
+.secfour {
+  padding: 3em 0;
+}
+/* FourBoxComponent.css */
+
+.img-responsive {
+  background-image: url("../public/Images/mob_bg.png");
+  background-position: top center;
+  background-size: contain;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  width: 100%; /* Make the background image responsive */
+  height: 500px; /* Ensure aspect ratio is maintained */
+  position: relative; /* Ensure relative positioning */
+  z-index: 9;
+}
+
+.innerimg {
+  width: 179px; /* Make the inner image responsive */
+  height: 320px; /* Ensure aspect ratio is maintained */
+  position: absolute; /* Position the inner image absolutely */
+  top: 43%; /* Center vertically */
+  left: 53%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+}
+
+.orderlist {
+  margin-top: 30px;
+}
+
+.activelist {
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  margin-bottom: 15px;
+  position: relative;
+  text-align: left;
+  background-color: transparent;
+  cursor: pointer;
+  list-style-type: none; /* Remove default list item marker */
+}
+
+.activelist .list-item-content {
+  display: flex; /* Use flexbox layout */
+}
+
+.activelist .list-item-content span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; /* Adjust width as needed */
+  height: 24px; /* Adjust height as needed */
+  border: 2px solid var(--bgColorInfo); /* Border color */
+  border-radius: 50%; /* Make it round */
+  margin-right: 20px; /* Adjust margin as needed */
+  font-weight: bold;
+  color: var(--bgColorInfo); /* Text color */
+  padding: 15px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.activelist .list-item-content span:hover {
+  background-color: var(--bgColorInfo); /* Change background color on hover */
+  color: var(--whiteColor); /* Change text color on hover */
+}
+
+.activelist .list-item-content div {
+  flex-grow: 1; /* Allow the content to grow to fill the available space */
+}
+.secfourmob {
+  padding: 3em 0;
+}
+
+.mobrow {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.activelist,
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-headingmob {
+  margin: 30px 0 20px 0;
+  color: #58585a;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1em;
+  text-align: center;
+  font-family: var(--font-family);
+}
+.txttittlemob {
+  color: #171717;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 10px; /* Remove default margin for paragraphs */
+  text-align: center;
+  font-family: var(--font-family);
+}
+@media screen and (min-width: 992px) {
+  .secfourmob {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .secfour {
+    display: none;
+  }
+}
+/* -----section5-------- */
+
+.sectionfive {
+  padding: 50px 0;
+}
+
+.drk-bg {
+  background-color: #000; /* Change to your desired dark background color */
+  height: auto;
+}
+
+.climpek-pattern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clrwhite {
+  color: var(--whiteColor);
+  font-size: 33px;
+  font-weight: bold;
+  font-family: var(--font-family);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.qrcode-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.qrcode-wrap:before,
+.qrcode-wrap:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 150px;
+  position: absolute;
+  left: 49%;
+  background-color: #fff;
+}
+
+.qrcode-wrap:before {
+  top: 0;
+}
+
+.qrcode-wrap:after {
+  content: "or";
+  width: 33px;
+  height: 33px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1em;
+  text-align: center;
+  line-height: 33px;
+  position: absolute;
+  left: 49%;
+  cursor: pointer;
+  margin-top: -16px;
+  margin-left: -16px;
+  color: #000;
+}
+
+.qrcode .imgqr {
+  width: 150px;
+  height: 120px;
+}
+
+.qrcode .spantxt {
+  float: left;
+  font-weight: bold;
+  color: var(--whiteColor);
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  font-family: var(--font-family);
+}
+
+.app-btn {
+  float: left;
+  width: 157px;
+  margin: 23px 0 0 0;
+}
+
+.app-btn .appimg {
+  border: solid 1px #fff;
+  display: block;
+  border-radius: 5px;
+  width: 150px;
+  height: 54px;
+  margin-bottom: 10px !important;
+  text-decoration: none;
+}
+.mainmob {
+  display: none;
+}
+
+/* contact-us-style */
+.sts-wrap-content {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 5.6em 0 0 0;
+}
+
+.map-wrap {
+  line-height: 0;
+}
+
+/* .iframe{
+  margin-bottom: 24px;
+  max-width: 100%;
+} */
+
+.contactmain {
+  float: left;
+  width: 100%;
+  padding: 3em 0;
+}
+
+.contactbox {
+  float: left;
+  width: 100%;
+}
+.contactboxh2 {
+  margin: 0px 0 10px 0;
+
+  /* font-weight: bold; */
+  font-size: 23px;
+  font-family: var(--font-family);
+}
+.contacttext {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 15px 0;
+  margin: 0 0 15px 0;
+}
+.contacttxt {
+  font-size: 17px;
+  font-family: var(--font-family);
+
+  margin-bottom: 24px;
+  color: var(--bgColorInfotext);
+}
+.formcontact {
+  margin-bottom: 15px;
+}
+.contactinput {
+  border: 1px solid #17c1e5 !important;
+}
+
+.contactinput:focus {
+  box-shadow: none;
+}
+
+.btncontact {
+  background-color: var(--bgColorInfosubmit);
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 30px 11px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+.btncontact:hover {
+  background-color: #59aa47;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 767px) {
+  .carosalhome {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main {
+    display: none;
+  }
+  .mobmain .col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qrcodemob {
+    justify-content: center;
+    align-items: center;
+  }
+  .qrcode-wrapmob {
+    justify-content: center;
+    align-items: center;
+  }
+  .qrcode-wrapmob:after {
+    content: "or";
+    width: 33px;
+    height: 33px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 1em;
+    text-align: center;
+    line-height: 33px;
+    position: absolute;
+    left: 49%;
+    cursor: pointer;
+    margin-top: 10;
+    color: #000;
+  }
+  .qrcodemob .imgqrmob {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-right: -25px;
+  }
+  .qrcodemob .spantxt {
+    float: left;
+    font-weight: bold;
+    color: var(--whiteColor);
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-family: var(--font-family);
+    text-align: center;
+    margin-left: 5px;
+  }
+  .app-btn {
+    float: left;
+    width: 157px;
+    margin-top: 25px;
+    /* background-color: #17c1e5; */
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  .app-btn .appimg {
+    border: solid 1px #fff;
+    display: block;
+    border-radius: 5px;
+    width: 130px;
+    height: 48px;
+    margin-top: 25px;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .carouseltitle {
+    left: 5px;
+    top: 15px;
+  }
+  .titile {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .custom-carousel-button {
+    display: none;
+  }
+  .qrcode-wrap:before {
+    display: none;
+  }
+}
+/* Media query for medium devices (e.g., tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+}
+
+/* Media query for large devices (e.g., desktops) */
+@media (min-width: 992px) {
+  .mobmain {
+    display: none;
+  }
+}
